@@ -1,0 +1,1 @@
+export {IGoogle} from './google';
