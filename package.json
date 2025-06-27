@@ -1,0 +1,24 @@
+{
+  "name": "google-auth",
+  "version": "1.0.0",
+  "description": "Simple \"Sign in with Google\" wrapper",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "Google",
+    "Auth",
+    "Google",
+    "Auth",
+    "Sign",
+    "in",
+    "with",
+    "Google",
+    "Google",
+    "Sign",
+    "in"
+  ],
+  "author": "",
+  "license": "ISC"
+}
