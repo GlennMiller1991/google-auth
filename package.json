@@ -2,23 +2,38 @@
   "name": "google-auth",
   "version": "1.0.0",
   "description": "Simple \"Sign in with Google\" wrapper",
-  "main": "index.js",
+  
+  "main": "dist/bin/index.js",
+  "types": "dist/types/index.d.ts",
+  "type": "module",
+  "exports": {
+    ".": {
+      "require": "./dist/bin/index.js",
+      "import": "./dist/bin/index.js",
+      "types": "./dist/types/index.d.ts"
+    }
+  },
+  
+  "files": [
+    "dist",
+    "README.ms"
+  ],
   "scripts": {
+    "build": "rm dist -r && mkdir dist && tsc",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [
-    "Google",
-    "Auth",
-    "Google",
-    "Auth",
-    "Sign",
-    "in",
-    "with",
-    "Google",
-    "Google",
-    "Sign",
-    "in"
+    "Google Auth",
+    "Sign in with Google"
   ],
   "author": "",
-  "license": "ISC"
+  "license": "ISC",
+  "devDependencies": {
+    "typescript": "^5.8.3"
+  },
+
+  "scope": "@fbltd",
+  "publishConfig": {
+      "access": "public"
+  }
 }

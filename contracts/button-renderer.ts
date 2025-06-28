@@ -78,5 +78,5 @@ type IGsiButtonConfiguration = {
 }
 
 export interface IButtonRenderer {
-    (parent: HTMLElement, configuration: IGsiButtonConfiguration)
+    (parent: HTMLElement, configuration: IGsiButtonConfiguration): void
 }

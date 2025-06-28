@@ -4,7 +4,7 @@ import { IGoogle } from "./contracts";
 
 declare let google: IGoogle | undefined;
 
-export abstract class GoogleAuth {
+export default abstract class GoogleAuth {
     private static isImportWas: boolean;
     private static tag?: HTMLScriptElement;
 
