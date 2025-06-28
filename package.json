@@ -1,6 +1,6 @@
 {
-  "name": "google-auth",
-  "version": "1.0.0",
+  "name": "@fbltd/google-auth",
+  "version": "1.0.1",
   "description": "Simple \"Sign in with Google\" wrapper",
   
   "main": "dist/bin/index.js",
@@ -19,8 +19,10 @@
     "README.ms"
   ],
   "scripts": {
-    "clear": "rm dist -r && rm node_modules -r",
-    "build": "npm run clear && npm i && mkdir dist && tsc",
+    "clearDist": "rm dist -r",
+    "clear": "npm run clearDist || rm node_modules -r",
+    "build": "npm run clear || npm i && mkdir dist && tsc",
+    "deploy": "npm run build && npm publish && npm run clearDist",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [
