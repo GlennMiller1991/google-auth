@@ -19,7 +19,8 @@
     "README.ms"
   ],
   "scripts": {
-    "build": "rm dist -r && mkdir dist && tsc",
+    "clear": "rm dist -r && rm node_modules -r",
+    "build": "npm run clear && npm i && mkdir dist && tsc",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [
