@@ -1,8 +1,8 @@
 {
     "compilerOptions": {
-        "module": "nodenext",
+        "module": "esnext",
         "target": "esnext",
-        "moduleResolution": "nodenext",
+        "moduleResolution": "bundler",
         "allowUnreachableCode": false,
         "allowUnusedLabels": false,
         "noImplicitAny": true,
