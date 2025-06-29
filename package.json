@@ -22,7 +22,7 @@
     "build": "(npm run clear || npm i) && mkdir dist && tsc",
     "test": "echo \"Error: no test specified\" && exit 1",
     "version-bump": "npm version patch && git commit ./package.json -c version bump || true",
-    "deploy": "npm run build && npm version patch && npm publish && npm run clearDist && git commit "
+    "deploy": "npm run build && npm run version-bump && npm publish && npm run clearDist"
   },
   "keywords": [
     "Google Auth",
