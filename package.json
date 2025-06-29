@@ -1,8 +1,7 @@
 {
   "name": "@fbltd/google-auth",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "Simple \"Sign in with Google\" wrapper",
-  
   "main": "dist/bin/index.js",
   "types": "dist/types/index.d.ts",
   "type": "module",
@@ -13,7 +12,6 @@
       "types": "./dist/types/index.d.ts"
     }
   },
-  
   "files": [
     "dist",
     "README.ms"
@@ -22,9 +20,7 @@
     "clearDist": "rm dist -r",
     "clear": "npm run clearDist || rm node_modules -r",
     "build": "(npm run clear || npm i) && mkdir dist && tsc",
-
     "test": "echo \"Error: no test specified\" && exit 1",
-
     "deploy": "npm run build && npm version patch && npm publish && npm run clearDist"
   },
   "keywords": [
@@ -36,9 +32,8 @@
   "devDependencies": {
     "typescript": "^5.8.3"
   },
-
   "scope": "@fbltd",
   "publishConfig": {
-      "access": "public"
+    "access": "public"
   }
 }
