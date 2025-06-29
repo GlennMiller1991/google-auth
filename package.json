@@ -1,6 +1,6 @@
 {
   "name": "@fbltd/google-auth",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "description": "Simple \"Sign in with Google\" wrapper",
   "main": "dist/bin/index.js",
   "types": "dist/types/index.d.ts",
