@@ -25,8 +25,7 @@
 
     "test": "echo \"Error: no test specified\" && exit 1",
 
-    "version": "npm run build",
-    "deploy": "npm run build && npm publish && npm run clearDist"
+    "deploy": "npm run build && npm version patch && npm publish && npm run clearDist"
   },
   "keywords": [
     "Google Auth",
