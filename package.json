@@ -1,6 +1,6 @@
 {
   "name": "@fbltd/google-auth",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "Simple \"Sign in with Google\" wrapper",
   "main": "dist/bin/index.js",
   "types": "dist/types/index.d.ts",
@@ -21,7 +21,6 @@
     "clear": "npm run clearDist || rm node_modules -r",
     "build": "(npm run clear || npm i) && mkdir dist && tsc",
     "test": "echo \"Error: no test specified\" && exit 1",
-
     "version-bump": "npm version patch && git commit ./package.json -c version bump",
     "deploy": "npm run build && npm version patch && npm publish && npm run clearDist && git commit "
   },
