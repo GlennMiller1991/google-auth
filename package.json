@@ -21,9 +21,12 @@
   "scripts": {
     "clearDist": "rm dist -r",
     "clear": "npm run clearDist || rm node_modules -r",
-    "build": "npm run clear || npm i && mkdir dist && tsc",
-    "deploy": "npm run build && npm publish && npm run clearDist",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "build": "(npm run clear || npm i) && mkdir dist && tsc",
+
+    "test": "echo \"Error: no test specified\" && exit 1",
+
+    "version": "npm run build",
+    "deploy": "npm run build && npm publish && npm run clearDist"
   },
   "keywords": [
     "Google Auth",

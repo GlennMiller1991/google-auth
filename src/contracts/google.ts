@@ -1,9 +1,9 @@
-import { IAutoSelectDisabler } from "./auto-select-disabler"
-import { IButtonRenderer } from "./button-renderer"
-import { ICredentailStorer } from "./cred-storer"
-import { IInitializer } from "./initializer"
-import { IPrompter } from "./prompter"
-import { IRevoker } from "./revoker"
+import type { IAutoSelectDisabler } from "./auto-select-disabler.js"
+import type { IButtonRenderer } from "./button-renderer.js"
+import type { ICredentailStorer } from "./cred-storer.js"
+import type { IInitializer } from "./initializer.js"
+import type { IPrompter } from "./prompter.js"
+import type { IRevoker } from "./revoker.js"
 
 
 export type IGoogle = {

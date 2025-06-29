@@ -1,19 +1,22 @@
 {
     "compilerOptions": {
-        "module": "esnext",
         "target": "esnext",
-        "moduleResolution": "bundler",
+
+        "module": "node18",
+        "moduleResolution": "node16",
+        
         "allowUnreachableCode": false,
         "allowUnusedLabels": false,
         "noImplicitAny": true,
-        "allowSyntheticDefaultImports": true,
-        "esModuleInterop": true,
+
         "declaration": true,
         "sourceMap": true,
         "declarationMap": true,
         "declarationDir": "./dist/types",
         "outDir": "./dist/bin",
-        "removeComments": false
+        "removeComments": false,
+
+        "noEmitOnError": true,
     },
     "exclude": [
         "/node_modules/",

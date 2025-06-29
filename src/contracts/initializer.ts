@@ -1,4 +1,4 @@
-import { ICredential } from "./cred-storer"
+import type { ICredential } from "./cred-storer.js"
 
 /**
  * When your callback function is invoked, a CredentialResponse object is passed as the parameter

@@ -1,6 +1,6 @@
-import { getPromise } from "./utils";
-import { authApiSrc } from "./constants";
-import { IGoogle } from "./contracts";
+import { getPromise } from "./utils/index.js";
+import { authApiSrc } from "./constants.js";
+import { IGoogle } from "./contracts/index.js";
 
 declare let google: IGoogle | undefined;
 

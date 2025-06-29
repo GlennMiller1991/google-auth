@@ -1,1 +1,1 @@
-export {IGoogle} from './google';
+export type {IGoogle} from './google.js';
