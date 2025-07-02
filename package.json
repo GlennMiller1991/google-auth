@@ -2,7 +2,7 @@
   "name": "@fbltd/google-auth",
   "homepage": "https://github.com/GlennMiller1991/google-auth",
   "bugs": "https://github.com/GlennMiller1991/google-auth/issues",
-  "version": "1.0.11",
+  "version": "1.0.12",
   "description": "Simple \"Sign in with Google\" wrapper",
   "main": "dist/bin/index.js",
   "types": "dist/types/index.d.ts",
