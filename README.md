@@ -11,7 +11,7 @@ Just type
 ```typescript
 const google = await GoogleAuth.import();
 if (!google) {
-    // Authentication failed
+    // Google lib loading error
     return;
 }
 
