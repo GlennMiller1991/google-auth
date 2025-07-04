@@ -2,12 +2,13 @@
     "compilerOptions": {
         "target": "esnext",
 
-        "module": "node18",
+        "module": "Node18",
         "moduleResolution": "node16",
-        
+
         "allowUnreachableCode": false,
         "allowUnusedLabels": false,
         "noImplicitAny": true,
+        "strictNullChecks": true,
 
         "declaration": true,
         "sourceMap": true,
@@ -15,7 +16,7 @@
         "outDir": "./dist/bin",
         "removeComments": false,
 
-        "noEmitOnError": true,
+        "noEmitOnError": true
     },
     "exclude": [
         "/node_modules/",
