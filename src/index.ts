@@ -21,7 +21,11 @@ export default abstract class GoogleAuth {
         const onComplete = () => {
             tag.remove();
             this.isImportWas = true;
-            resolve(google);
+            let lib: IGoogle | undefined = undefined;
+            try {
+                lib = google;
+            } catch(err) {}
+            resolve(lib);
         }
         tag.onload = onComplete;
         tag.onerror = onComplete;

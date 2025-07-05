@@ -17,7 +17,9 @@ export function getPromise<TReturn>() {
     return {
         resolve,
         reject,
-        isPending,
+        get isPending() {
+            return isPending;
+        },
         promise
     }
 }
