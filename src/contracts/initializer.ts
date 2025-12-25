@@ -170,5 +170,5 @@ type IInitializeConfig = {
 }>
 
 export interface IInitializer {
-    config: IInitializeConfig
+    (config: IInitializeConfig): void
 }
